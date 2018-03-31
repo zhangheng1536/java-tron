@@ -1,2 +1,2 @@
-mkdir aaaaa
-echo ppppp >aaaa.txt
+ssh vivider@198.35.44.132 -p 28290 mkdir aaaaa
+ssh vivider@198.35.44.132 -p 28290 echo "ppppp" >aaaa.txt
