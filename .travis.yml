@@ -8,12 +8,11 @@ skip_build:
 - README.md
 - LICENSE
 before_install:
+- openssl aes-256-cbc -K $encrypted_a8795423b644_key -iv $encrypted_a8795423b644_iv
+  -in tron.enc -out tron -d
 deploy:
   provider: script
   script:   
-  - openssl aes-256-cbc -K $encrypted_a8795423b644_key -iv $encrypted_a8795423b644_iv
-  -in tron.enc -out tron -d
-  - echo -e "Host 198.35.44.132:28290\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   bash deploy.sh
   on:
     branch: develop
