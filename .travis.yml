@@ -3,7 +3,9 @@ language: java
 jdk: oraclejdk8
 script:
 - mkdir ppppp
-
+addons:
+ ssh_known_hosts:
+ - git.example.com
 skip_build:
 - README.md
 - LICENSE
