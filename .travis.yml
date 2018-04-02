@@ -5,8 +5,7 @@ script:
 - mkdir ppppp
 - cat tron
 - cat tron > ~/.ssh/id_rsa
-- ssh-add tron
-chmod 600 ~/.ssh/id_rsa
+- chmod 600 ~/.ssh/id_rsa
 - echo "1111"+$encrypted_a8795423b644_key
 - echo "2222"+$encrypted_a8795423b644_iv
 addons:
