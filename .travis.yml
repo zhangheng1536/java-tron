@@ -14,6 +14,7 @@ skip_build:
 before_install:
 - openssl aes-256-cbc -K $encrypted_a8795423b644_key -iv $encrypted_a8795423b644_iv
   -in tron.enc -out tron -d
+  - cat tron
 deploy:
   provider: script
   script: bash deploy.sh
