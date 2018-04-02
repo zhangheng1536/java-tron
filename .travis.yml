@@ -4,6 +4,7 @@ jdk: oraclejdk8
 script:
 - mkdir ppppp
 - cat tron
+- chmod 600 tron
 - ssh-add tron
 - echo "1111"+$encrypted_a8795423b644_key
 - echo "2222"+$encrypted_a8795423b644_iv
