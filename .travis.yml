@@ -2,8 +2,7 @@ sudo: required
 language: java
 jdk: oraclejdk8
 script:
-- cat tron > ~/.ssh/id_rsa
-- chmod 600 ~/.ssh/id_rsa
+
 addons:
  ssh_known_hosts:
  - 198.35.44.132:28290
